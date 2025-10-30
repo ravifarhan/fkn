@@ -1,0 +1,211 @@
+import { Product } from "@/types";
+
+export const dummyProducts: Product[] = [
+  {
+    id: "p1",
+    slug: "classic-oxford-shirt",
+    title: "Classic Oxford Shirt",
+    description:
+      "A premium cotton oxford shirt with a slim fit cut. Perfect for both work and casual occasions.",
+    sku: "SHIRT-001",
+    barcode: "123456789001",
+    categoryId: "1",
+    price: 399000,
+    discountPercent: 10,
+    stock: 25,
+    isActive: true,
+    images: [
+      {
+        id: "img1",
+        url: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg",
+        alt: "Classic Oxford Shirt front view",
+        isPrimary: true,
+      },
+      {
+        id: "img2",
+        url: "https://images.pexels.com/photos/5325891/pexels-photo-5325891.jpeg",
+        alt: "Classic Oxford Shirt folded",
+      },
+    ],
+    variants: [
+      { id: "v1", stock: 10, size: "M", color: "White" },
+      { id: "v2", stock: 15, size: "L", color: "Blue" },
+    ],
+    weight: 350,
+    dimensions: { width: 30, height: 2, length: 40 },
+    createdAt: "2025-10-01T10:00:00Z",
+  },
+  {
+    id: "p2",
+    slug: "minimal-leather-sneakers",
+    title: "Minimal Leather Sneakers",
+    description:
+      "Minimalist leather sneakers crafted for all-day comfort with soft lining and flexible rubber sole.",
+    sku: "SHOE-001",
+    barcode: "123456789002",
+    categoryId: "2",
+    price: 899000,
+    stock: 18,
+    isActive: true,
+    images: [
+      {
+        id: "img3",
+        url: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+        alt: "Minimal Leather Sneakers",
+        isPrimary: true,
+      },
+      {
+        id: "img4",
+        url: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+        alt: "Sneakers detail",
+      },
+      {
+        id: "img5",
+        url: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+        alt: "Sneakers detail",
+      },
+      {
+        id: "img7",
+        url: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+        alt: "Sneakers detail",
+      },
+      {
+        id: "img6",
+        url: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+        alt: "Sneakers detail",
+      },
+      {
+        id: "img9",
+        url: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg",
+        alt: "Sneakers detail",
+      },
+    ],
+    variants: [
+      { id: "v3", stock: 8, size: "42", color: "Black" },
+      { id: "v3", stock: 8, size: "42", color: "White" },
+      { id: "v4", stock: 10, size: "43", color: "White" },
+    ],
+    weight: 900,
+    dimensions: { width: 20, height: 12, length: 30 },
+    createdAt: "2025-10-01T10:00:00Z",
+  },
+  {
+    id: "p3",
+    slug: "tapered-denim-jeans",
+    title: "Tapered Denim Jeans",
+    description:
+      "Stretch denim jeans with a tapered fit that gives a sleek silhouette and everyday comfort.",
+    sku: "PANT-001",
+    barcode: "123456789003",
+    categoryId: "3",
+    price: 499000,
+    stock: 30,
+    discountPercent: 5,
+    isActive: true,
+    images: [
+      {
+        id: "img5",
+        url: "https://images.pexels.com/photos/775279/pexels-photo-775279.jpeg",
+        alt: "Tapered Denim Jeans front",
+        isPrimary: true,
+      },
+      {
+        id: "img6",
+        url: "https://images.pexels.com/photos/3755709/pexels-photo-3755709.jpeg",
+        alt: "Denim detail",
+      },
+    ],
+    variants: [
+      { id: "v5", stock: 12, size: "32", color: "Blue" },
+      { id: "v6", stock: 18, size: "34", color: "Black" },
+    ],
+    weight: 650,
+    dimensions: { width: 35, height: 3, length: 45 },
+    createdAt: "2025-10-01T10:00:00Z",
+  },
+  {
+    id: "p4",
+    slug: "vintage-graphic-tee",
+    title: "Vintage Graphic Tee",
+    description:
+      "Soft cotton unisex t-shirt with a retro-inspired graphic print. Easy to style for daily wear.",
+    sku: "SHIRT-002",
+    barcode: "123456789004",
+    categoryId: "1",
+    price: 299000,
+    stock: 50,
+    isActive: true,
+    images: [
+      {
+        id: "img7",
+        url: "https://images.pexels.com/photos/6311663/pexels-photo-6311663.jpeg",
+        alt: "Vintage Graphic Tee",
+        isPrimary: true,
+      },
+    ],
+    variants: [
+      { id: "v7", stock: 20, size: "M", color: "Black" },
+      { id: "v8", stock: 30, size: "L", color: "White" },
+    ],
+    weight: 250,
+    dimensions: { width: 30, height: 2, length: 35 },
+    createdAt: "2025-10-01T10:00:00Z",
+  },
+  {
+    id: "p5",
+    slug: "canvas-tote-bag",
+    title: "Canvas Tote Bag",
+    description:
+      "Durable heavy-canvas tote bag with a clean minimalist design. Fits a 13-inch laptop easily.",
+    sku: "ACC-001",
+    barcode: "123456789005",
+    categoryId: "4",
+    price: 249000,
+    stock: 40,
+    isActive: true,
+    images: [
+      {
+        id: "img8",
+        url: "https://images.pexels.com/photos/9100846/pexels-photo-9100846.jpeg",
+        alt: "Canvas Tote Bag",
+        isPrimary: true,
+      },
+    ],
+    variants: [
+      { id: "v9",  stock: 25, color: "Beige", size: "S" },
+      { id: "v10", stock: 15, color: "Black", size: "M" },
+    ],
+    weight: 450,
+    dimensions: { width: 40, height: 5, length: 45 },
+    createdAt: "2025-10-01T10:00:00Z",
+  },
+  {
+    id: "p6",
+    slug: "athletic-jogger-pants",
+    title: "Athletic Jogger Pants",
+    description:
+      "Lightweight jogger pants made from quick-dry fabric, ideal for workouts or casual wear.",
+    sku: "PANT-002",
+    barcode: "123456789006",
+    categoryId: "3",
+    price: 399000,
+    discountPercent: 15,
+    stock: 22,
+    isActive: true,
+    images: [
+      {
+        id: "img9",
+        url: "https://images.pexels.com/photos/6311622/pexels-photo-6311622.jpeg",
+        alt: "Athletic Jogger Pants",
+        isPrimary: true,
+      },
+    ],
+    variants: [
+      { id: "v11", stock: 10, size: "M", color: "Grey" },
+      { id: "v12",  stock: 12, size: "L", color: "Navy" },
+    ],
+    weight: 500,
+    dimensions: { width: 33, height: 2, length: 43 },
+    createdAt: "2025-10-01T10:00:00Z",
+  },
+];
